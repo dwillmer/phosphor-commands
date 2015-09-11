@@ -6,3 +6,16 @@
 | The full license is in the file LICENSE, distributed with this software.
 |----------------------------------------------------------------------------*/
 'use strict';
+
+
+interface ICommand {
+  /**
+   * read-only
+   */
+  id: string;
+
+  /**
+   *
+   */
+  invoke(args?: any): void;
+}
