@@ -10,9 +10,19 @@
 
 interface ICommand {
   /**
+   *
+   */
+  enabledChanged: ISignal<ICommand, boolean>;
+
+  /**
    * read-only
    */
   id: string;
+
+  /**
+   *
+   */
+  enabled: boolean;
 
   /**
    *
